@@ -1,0 +1,10 @@
+# /etc/hosts
+
+127.0.0.1	localhost
+##localhost	mydb-gerver
+10.10.28.2	mydb-server
+10.10.28.2	mydb-server-view
+10.10.28.2	mydb-server-brg
+10.10.28.2	mydb-brg-server
+
+37.187.27.134   rc18-online

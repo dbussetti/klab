@@ -1,0 +1,451 @@
+<VirtualHost *:80>
+
+       ServerName lab-dev.p2r.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-dev
+
+        <Directory /var/www/htdocs/lab-dev>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        Alias /SyncEngine "/var/www/htdocs/lab-dev/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-dev/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-dev/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-dev/webapp/"
+        Alias /core "/var/www/htdocs/lab-dev/core/"
+        Alias /package "/var/www/htdocs/lab-dev/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-dev/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-dev/extension/"
+        Alias /application "/var/www/htdocs/lab-dev/application/"
+        Alias /pilota "/var/www/htdocs/lab-dev/pilota/"
+
+        Alias / "/var/www/htdocs/lab-dev/webapp/webroot/"
+
+</VirtualHost>
+
+
+
+<VirtualHost *:80>
+
+       ServerName lab.p2r.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-p2r
+
+        <Directory /var/www/htdocs/lab-p2r>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        Alias /SyncEngine "/var/www/htdocs/lab-p2r/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-p2r/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-p2r/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-p2r/webapp/"
+        Alias /core "/var/www/htdocs/lab-p2r/core/"
+        Alias /package "/var/www/htdocs/lab-p2r/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-p2r/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-p2r/extension/"
+        Alias /application "/var/www/htdocs/lab-p2r/application/"
+        Alias /pilota "/var/www/htdocs/lab-p2r/pilota/"
+
+        Alias / "/var/www/htdocs/lab-p2r/webapp/webroot/"
+
+</VirtualHost>
+
+<VirtualHost *:80>
+
+       ServerName lab-capri.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-capri
+
+        <Directory /var/www/htdocs/lab-capri>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        Alias /SyncEngine "/var/www/htdocs/lab-capri/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-capri/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-capri/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-capri/webapp/"
+        Alias /core "/var/www/htdocs/lab-capri/core/"
+        Alias /package "/var/www/htdocs/lab-capri/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-capri/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-capri/extension/"
+        Alias /application "/var/www/htdocs/lab-capri/application/"
+        Alias /pilota "/var/www/htdocs/lab-capri/pilota/"
+
+        Alias / "/var/www/htdocs/lab-capri/webapp/webroot/"
+
+</VirtualHost>
+
+
+
+<VirtualHost *:80>
+
+       ServerName lab-ls.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-lspagnoli
+
+        <Directory /var/www/htdocs/lab-lspagnoli>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        Alias /SyncEngine "/var/www/htdocs/lab-lspagnoli/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-lspagnoli/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-lspagnoli/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-lspagnoli/webapp/"
+        Alias /core "/var/www/htdocs/lab-lspagnoli/core/"
+        Alias /package "/var/www/htdocs/lab-lspagnoli/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-lspagnoli/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-lspagnoli/extension/"
+        Alias /application "/var/www/htdocs/lab-lspagnoli/application/"
+        Alias /pilota "/var/www/htdocs/lab-lspagnoli/pilota/"
+
+        Alias / "/var/www/htdocs/lab-lspagnoli/webapp/webroot/"
+
+</VirtualHost>
+
+
+
+<VirtualHost *:80>
+
+       ServerName lab-fm.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-fm
+
+        <Directory /var/www/htdocs/lab-fm>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+
+        Alias /SyncEngine "/var/www/htdocs/lab-fm/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-fm/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-fm/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-fm/webapp/"
+        Alias /core "/var/www/htdocs/lab-fm/core/"
+        Alias /package "/var/www/htdocs/lab-fm/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-fm/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-fm/extension/"
+        Alias /application "/var/www/htdocs/lab-fm/application/"
+        Alias /pilota "/var/www/htdocs/lab-fm/pilota/"
+
+        Alias / "/var/www/htdocs/lab-fm/webapp/webroot/"
+
+
+
+</VirtualHost>
+
+
+<VirtualHost *:80>
+
+       ServerName poliass.kir.it
+       ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/poliass
+
+        <Directory /var/www/htdocs/poliass>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+
+        Alias /core "/var/www/htdocs/poliass/core/"
+        Alias /webapp "/var/www/htdocs/poliass/webapp/"
+        Alias /package "/var/www/htdocs/poliass/package/"
+        Alias /nfs-dir "/var/www/htdocs/poliass/nfs-dir/"
+        Alias / "/var/www/htdocs/poliass/webapp/webroot/"
+
+</VirtualHost>
+
+
+
+<VirtualHost *:80>
+
+       ServerName lab-rc18.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-rc18
+
+        <Directory /var/www/htdocs/lab-rc18>
+		Options Indexes Includes FollowSymLinks MultiViews
+		AllowOverride AuthConfig FileInfo
+		Order allow,deny
+		Allow from all
+        </Directory>
+
+
+        Alias /SyncEngine "/var/www/htdocs/lab-rc18/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-rc18/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-rc18/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-rc18/webapp/"
+        Alias /core "/var/www/htdocs/lab-rc18/core/"
+        Alias /package "/var/www/htdocs/lab-rc18/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-rc18/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-rc18/extension/"
+        Alias /application "/var/www/htdocs/lab-rc18/application/"
+        Alias /pilota "/var/www/htdocs/lab-rc18/pilota/"
+
+        Alias / "/var/www/htdocs/lab-rc18/webapp/webroot/"
+
+
+
+</VirtualHost>
+
+<VirtualHost *:80>
+
+       ServerName test-rc18.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/test-rc18
+
+        <Directory /var/www/htdocs/test-rc18>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+
+        Alias /SyncEngine "/var/www/htdocs/test-rc18/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/test-rc18/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/test-rc18/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/test-rc18/webapp/"
+        Alias /core "/var/www/htdocs/test-rc18/core/"
+        Alias /package "/var/www/htdocs/test-rc18/package/"
+        Alias /nfs-dir "/var/www/htdocs/test-rc18/nfs-dir/"
+        Alias /extension "/var/www/htdocs/test-rc18/extension/"
+        Alias /application "/var/www/htdocs/test-rc18/application/"
+        Alias /pilota "/var/www/htdocs/test-rc18/pilota/"
+
+        Alias / "/var/www/htdocs/test-rc18/webapp/webroot/"
+
+
+
+</VirtualHost>
+
+
+<VirtualHost *:80>
+
+       ServerName brg-rc18.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/brg-rc18/root
+
+        <Directory /var/www/htdocs/brg-rc18/root>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+
+</VirtualHost>
+
+<VirtualHost *:80>
+
+       ServerName lab-candida.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-candida
+
+        <Directory /var/www/htdocs/lab-candida>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+
+
+        Alias /SyncEngine "/var/www/htdocs/lab-candida/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-candida/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-candida/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-candida/webapp/"
+        Alias /core "/var/www/htdocs/lab-candida/core/"
+        Alias /package "/var/www/htdocs/lab-candida/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-candida/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-candida/extension/"
+        Alias /application "/var/www/htdocs/lab-candida/application/"
+        Alias /pilota "/var/www/htdocs/lab-candida/pilota/"
+
+        Alias / "/var/www/htdocs/lab-candida/webapp/webroot/"
+
+
+
+</VirtualHost>
+
+
+<VirtualHost *:80>
+
+       ServerName brg-candida.kir.it
+        ServerAdmin webmaster@localhost
+        
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/brg-candida/root
+        
+        <Directory /var/www/htdocs/brg-candida/root>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+        
+</VirtualHost>
+
+
+<VirtualHost *:80>
+
+       ServerName lab-dalmesse.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-dalmesse
+
+        <Directory /var/www/htdocs/lab-dalmesse>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        Alias /SyncEngine "/var/www/htdocs/lab-dalmesse/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-dalmesse/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-dalmesse/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-dalmesse/webapp/"
+        Alias /core "/var/www/htdocs/lab-dalmesse/core/"
+        Alias /package "/var/www/htdocs/lab-dalmesse/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-dalmesse/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-dalmesse/extension/"
+        Alias /application "/var/www/htdocs/lab-dalmesse/application/"
+        Alias /pilota "/var/www/htdocs/lab-dalmesse/pilota/"
+
+        Alias /scambioimporto "/var/www/htdocs/lab-dalmesse/scambioimporto/"
+
+        Alias / "/var/www/htdocs/lab-dalmesse/webapp/webroot/"
+
+</VirtualHost>
+
+<VirtualHost *:80>
+
+       ServerName lab-linclalor.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-linclalor
+
+        <Directory /var/www/htdocs/lab-linclalor>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        Alias /SyncEngine "/var/www/htdocs/lab-linclalor/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-linclalor/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-linclalor/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-linclalor/webapp/"
+        Alias /core "/var/www/htdocs/lab-linclalor/core/"
+        Alias /package "/var/www/htdocs/lab-linclalor/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-linclalor/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-linclalor/extension/"
+        Alias /application "/var/www/htdocs/lab-linclalor/application/"
+        Alias /pilota "/var/www/htdocs/lab-linclalor/pilota/"
+
+        Alias / "/var/www/htdocs/lab-linclalor/webapp/webroot/"
+
+</VirtualHost>
+
+<VirtualHost *:80>
+
+       ServerName lab-rstore.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-rstore
+
+        <Directory /var/www/htdocs/lab-rstore>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+
+        Alias /SyncEngine "/var/www/htdocs/lab-rstore/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-rstore/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-rstore/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-rstore/webapp/"
+        Alias /core "/var/www/htdocs/lab-rstore/core/"
+        Alias /package "/var/www/htdocs/lab-rstore/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-rstore/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-rstore/extension/"
+        Alias /application "/var/www/htdocs/lab-rstore/application/"
+        Alias /pilota "/var/www/htdocs/lab-rstore/pilota/"
+
+        Alias / "/var/www/htdocs/lab-rstore/webapp/webroot/"
+
+
+
+</VirtualHost>
+
+
+<VirtualHost *:80>
+
+       ServerName mediawiki.kir.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/wikikir
+
+        <Directory /var/www/htdocs/wikikir>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+</VirtualHost>
+
+

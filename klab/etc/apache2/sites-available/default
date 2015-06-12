@@ -1,0 +1,29 @@
+<VirtualHost *:80>
+
+       ServerName lab-dev.p2r.it
+        ServerAdmin webmaster@localhost
+
+        # Indexes + Directory Root.
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/htdocs/lab-dev
+
+        <Directory /var/www/htdocs/lab-dev>
+                Options Indexes Includes FollowSymLinks MultiViews
+                AllowOverride AuthConfig FileInfo
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        Alias /SyncEngine "/var/www/htdocs/lab-dev/package/SyncEngine/"
+        Alias /MessaggiInterni "/var/www/htdocs/lab-dev/package/MessaggiInterni/"
+        Alias /InStoreClient "/var/www/htdocs/lab-dev/package/InStoreClient/"
+        Alias /webapp "/var/www/htdocs/lab-dev/webapp/"
+        Alias /core "/var/www/htdocs/lab-dev/core/"
+        Alias /package "/var/www/htdocs/lab-dev/package/"
+        Alias /nfs-dir "/var/www/htdocs/lab-dev/nfs-dir/"
+        Alias /extension "/var/www/htdocs/lab-dev/extension/"
+        Alias /application "/var/www/htdocs/lab-dev/application/"
+        Alias /pilota "/var/www/htdocs/lab-dev/pilota/"
+        Alias / "/var/www/htdocs/lab-dev/webapp/webroot/"
+
+</VirtualHost>
